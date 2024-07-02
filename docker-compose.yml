@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+   new-flow:
+     image: qip-work-new-flow
+     ports:
+      - "5000:5000"
+     restart: always
+     volumes:
+      - data:/home/node/app/data
+      
+volumes:
+  data:
+    driver: local
+    driver_opts:
+       o: bind
+       type: none
+       device: /home/squadra/Área de Trabalho/generetedCode/work/data
