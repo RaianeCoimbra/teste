@@ -29,9 +29,8 @@ const fastify = require("fastify");
         securityToken: "teste",
       }).ready();
 
-  app.register(require("./routes"), { prefix: "/" });
-app.register(require("./routes"), { prefix: "/" });
-app.register(require("./routes"), { prefix: "/" });
+  app.register(require("./routes/account"), { prefix: "/account" });
+app.register(require("./routes/new"), { prefix: "/new" });
   
   app.listen({ host: "0.0.0.0", port: port }, (err) => {
     if (err) {

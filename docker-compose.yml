@@ -1,8 +1,8 @@
 version: '3'
 
 services:
-   new-flow:
-     image: qip-work-new-flow
+   salesforce:
+     image: qip-work-salesforce
      ports:
       - "5000:5000"
      restart: always
