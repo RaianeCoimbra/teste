@@ -22,9 +22,16 @@ const fastify = require("fastify");
 
 
   
-  
+  app.register(require("./globals/salesforce"), {
+        name: "teste",
+        username: "teste",
+        password: "teste",
+        securityToken: "teste",
+      }).ready();
 
-  
+  app.register(require("./routes"), { prefix: "/" });
+app.register(require("./routes"), { prefix: "/" });
+app.register(require("./routes"), { prefix: "/" });
   
   app.listen({ host: "0.0.0.0", port: port }, (err) => {
     if (err) {
