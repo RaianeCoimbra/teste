@@ -16,7 +16,7 @@ FROM node:18-alpine
     ENV PORT=5000
     ENV USERNAME=undefined
     ENV PASSWORD=undefined
-    
+    ENV qip=qip123
 
     # Expose the port on which the Express.js application will listen
     EXPOSE 5000
