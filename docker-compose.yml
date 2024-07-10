@@ -1,8 +1,8 @@
 version: '3'
 
 services:
-   salesforce:
-     image: qip-work-salesforce
+   sale:
+     image: qip-work-sale
      ports:
       - "5000:5000"
      restart: always
