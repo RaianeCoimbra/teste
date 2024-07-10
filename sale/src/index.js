@@ -24,9 +24,21 @@ const fastify = require("fastify");
   
   app.register(require("./globals/salesforce"), {
         name: "teste",
-        username: "teste",
-        password: "teste",
-        securityToken: "teste",
+        username: "tset",
+        password: "test",
+        securityToken: "teset",
+      }).ready();
+app.register(require("./globals/salesforce"), {
+        name: "teste",
+        username: "asd",
+        password: "asd",
+        securityToken: "asdasd",
+      }).ready();
+app.register(require("./globals/salesforce"), {
+        name: "asdfas",
+        username: "asdfa",
+        password: "asdfas",
+        securityToken: "asdfasdfas",
       }).ready();
 
   app.register(require("./routes/account"), { prefix: "/account" });
